@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Login Form</title>
+    <title>Login and Sign Up Form</title>
 </head>
 <body>
     <div class="container">
-        <h2>Login Form</h2>
+        <h2 id="formTitle">Login Form</h2>
         <div id="message"></div>
+        
         <form id="loginForm">
             <label for="username">Username:</label>
             <input type="text" id="username" required>
@@ -17,7 +18,17 @@
             <input type="password" id="password" required>
             <button type="submit">Login</button>
         </form>
+
+        <form id="signupForm" style="display:none;">
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" required>
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" required>
+            <button type="submit">Sign Up</button>
+        </form>
+
         <button id="logoutButton" style="display:none;">Logout</button>
+        <button id="toggleFormButton">Switch to Sign Up</button>
     </div>
     <script src="script.js"></script>
 </body>
